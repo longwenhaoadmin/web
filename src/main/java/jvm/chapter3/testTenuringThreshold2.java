@@ -9,17 +9,29 @@ public class testTenuringThreshold2 {
 	 */
 	@SuppressWarnings("unused")
 	public static void testTenuringThreshold2() {
-		byte[] allocation1, allocation2, allocation3, allocation4;
+		byte[] allocation1, allocation2, allocation3, allocation4,allocation5,allocation6,
+		allocation7;
 		
-		allocation3 = new byte[4 * _1MB];
+		//allocation3 = new byte[4 * _1MB];
 		allocation4 = new byte[4 * _1MB];
 		allocation4 = null;
-		allocation1 = new byte[_1MB / 4];
+		allocation1 = new byte[_1MB / 8];
+		allocation6 = new byte[_1MB / 4];
+		allocation2 = new byte[_1MB / 8];
 		// allocation1+allocation2大于survivo空间一半
 		
+		/*allocation4 = new byte[4 * _1MB];
+		allocation4 = null;
+		
 		allocation4 = new byte[4 * _1MB];
 		allocation4 = null;
-		allocation2 = new byte[_1MB / 4];
+		allocation5 = new byte[_1MB / 4];
+		allocation4 = new byte[4 * _1MB];*/
+		/*allocation4 = null;
+		allocation6 = new byte[_1MB / 4];*/
+		allocation4 = new byte[4 * _1MB];
+		allocation4 = null;
+		allocation7 = new byte[_1MB / 100*1];
 		allocation4 = new byte[4 * _1MB];
 	}
 	public static void main(String[] args) {
